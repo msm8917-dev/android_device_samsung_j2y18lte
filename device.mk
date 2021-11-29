@@ -26,6 +26,10 @@ $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/msm8917_camera_j2y18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_j2y18.xml
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/sec_touchkey.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sec_touchkey.kl
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit vendor
