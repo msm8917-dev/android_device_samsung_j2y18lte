@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+LOCAL_PATH := device/samsung/j2y18lte
+
 # XXX define this first!!
 TARGET_DEVICE_SUPPORTS_NFC := false
 
@@ -23,9 +25,7 @@ $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/msm8917_camera_j2y18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_j2y18.xml
 
-# Soong
-PRODUCT_SOONG_NAMESPACES += \
-    device/samsung/j2y18lte
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit vendor
 $(call inherit-product, vendor/samsung/j2y18lte/j2y18lte-vendor.mk)
