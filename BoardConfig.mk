@@ -20,7 +20,6 @@ TARGET_KERNEL_CONFIG := j4primelte_defconfig
 
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2453520000
-BOARD_VENDORIMAGE_PARTITION_SIZE := 295698432
 
 # Inherit from common msm8917-common
 -include device/samsung/msm8917-common/BoardConfigCommon.mk
