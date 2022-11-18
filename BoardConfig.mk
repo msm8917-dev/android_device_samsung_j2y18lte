@@ -13,16 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/j4primelte
-
 # Kernel
-TARGET_KERNEL_CONFIG := j4primelte_defconfig
+TARGET_KERNEL_CONFIG := j2y18lte_defconfig
 
 # Filesystem
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2453520000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3514826752
 
 # Inherit from common msm8917-common
 -include device/samsung/msm8917-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/j4primelte/BoardConfigVendor.mk
+-include vendor/samsung/j2y18lte/BoardConfigVendor.mk

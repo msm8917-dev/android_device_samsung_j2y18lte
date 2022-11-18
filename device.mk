@@ -18,12 +18,11 @@ $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/camera/s5k3l6xx_chromatix_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6xx_chromatix_j4primelte.xml \
-    $(LOCAL_PATH)/camera/sdm450_camera_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_j4primelte.xml
+    $(LOCAL_PATH)/camera/msm8917_camera_j2y18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_j2y18.xml
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    device/samsung/j4primelte
+    device/samsung/j2y18lte
 
 # Inherit vendor
-$(call inherit-product, vendor/samsung/j4primelte/j4primelte-vendor.mk)
+$(call inherit-product, vendor/samsung/j2y18lte/j4primelte-vendor.mk)

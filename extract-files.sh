@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=j4primelte
+DEVICE=j2y18lte
 VENDOR=samsung
 
 # Load extract_utils and do some sanity checks
