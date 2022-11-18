@@ -25,4 +25,4 @@ PRODUCT_SOONG_NAMESPACES += \
     device/samsung/j2y18lte
 
 # Inherit vendor
-$(call inherit-product, vendor/samsung/j2y18lte/j4primelte-vendor.mk)
+$(call inherit-product, vendor/samsung/j2y18lte/j2y18lte-vendor.mk)
