@@ -59,9 +59,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 
 TW_THEME := portrait_hdpi
+
 # Do not set up legacy properties
 TW_NO_LEGACY_PROPS := true
-TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 96
 TW_USE_TOOLBOX := true
