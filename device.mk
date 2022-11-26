@@ -19,8 +19,10 @@ LOCAL_PATH := device/samsung/j2y18lte
 TARGET_DEVICE_SUPPORTS_NFC := false
 OVERLAY_DEVICE := j2y18lte
 TARGET_DEVICE_LEGACY_KM := true
+
 # Inherit from msm8917-common
 $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Camera
 PRODUCT_COPY_FILES += \
