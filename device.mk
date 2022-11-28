@@ -29,7 +29,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/camera/msm8917_camera_j2y18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_j2y18.xml
+    $(LOCAL_PATH)/camera/msm8917_camera_j2y18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_j2y18.xml \
+    $(LOCAL_PATH)/camera/N05QL_s5k5e3yx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/N05QL_s5k5e3yx_module_info.xml \
+    $(LOCAL_PATH)/camera/Y08QF_sr846_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Y08QF_sr846_module_info.xml
 
 # Keylayout
 PRODUCT_COPY_FILES += \
