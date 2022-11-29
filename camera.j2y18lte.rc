@@ -1,0 +1,8 @@
+# Galaxy J2 2018 launched with Android N
+# So many blobs are pointing to old-style directories
+# (Before /vendor was introduced)
+# So we need some hacks to make camera work
+
+on post-fs-data
+    symlink /data/vendor /data/oem
+    copy /system/vendor/etc/camera/msm8917_camera_j2y18.xml /data/vendor/camera/msm8917_camera_j2y18.xml

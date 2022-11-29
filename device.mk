@@ -39,5 +39,7 @@ PRODUCT_COPY_FILES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+PRODUCT_PACKAGES += camera.j2y18lte.rc
+
 # Inherit vendor
 $(call inherit-product, vendor/samsung/j2y18lte/j2y18lte-vendor.mk)
