@@ -4,5 +4,9 @@
 # So we need some hacks to make camera work
 
 on post-fs-data
-    symlink /data/vendor /data/oem
-    copy /system/vendor/etc/camera/msm8917_camera_j2y18.xml /data/vendor/camera/msm8917_camera_j2y18.xml
+    mkdir /data/oem 0661 camera camera
+    mkdir /data/oem/camera 0661 camera camera
+    rm /data/oem/camera/msm8917_camera_j2y18.xml
+    copy /system/vendor/etc/camera/msm8917_camera_j2y18.xml /data/oem/camera/msm8917_camera_j2y18.xml
+    chown camera camera /data/oem/camera/msm8917_camera_j2y18.xml
+    chmod 0660 /data/oem/camera/msm8917_camera_j2y18.xml
