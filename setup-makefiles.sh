@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=**** FILL IN DEVICE NAME ****
-export DEVICE_COMMON=**** FILL IN COMMON NAME ****
-export VENDOR=**** FILL IN VENDOR NAME ****
+export DEVICE=j2y18lte
+export DEVICE_COMMON=msm8917-common
+export VENDOR=samsung
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
