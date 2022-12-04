@@ -28,10 +28,14 @@ $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Camera
+# We have s5k5e3yx_f2_2_chromatix.xml already on common tree
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/msm8917_camera_j2y18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_camera_j2y18.xml \
     $(LOCAL_PATH)/camera/N05QL_s5k5e3yx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/N05QL_s5k5e3yx_module_info.xml \
-    $(LOCAL_PATH)/camera/Y08QF_sr846_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Y08QF_sr846_module_info.xml
+    $(LOCAL_PATH)/camera/Y08QF_sr846_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Y08QF_sr846_module_info.xml \
+    $(LOCAL_PATH)/camera/Y08QF_sr846_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Y08QF_sr846_chromatix.xml \
+    $(LOCAL_PATH)/camera/s5k5e3yx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e3yx_chromatix.xml \
+    $(LOCAL_PATH)/camera/sr846_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr846_chromatix.xml
 
 # Keylayout
 PRODUCT_COPY_FILES += \
